@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "minecraft:netherite_block",
+    "minecraft:respawn_anchor",
+    "minecraft:ancient_debris",
+    "malechia:boss_essence_iron_block",
+    "malechia:alotic_ore",
+    "malechia:deepslate_alotic_ore",
+    "malechia:halorium_ore",
+    "malechia:deepslate_halorium_ore",
+    "malechia:litrium_ore",
+    "malechia:deepslate_litrium_ore",
+    "malechia:mycronium_ore",
+    "malechia:deepslate_mycronium_ore",
+    "malechia:quarite_ore",
+    "malechia:deepslate_quarite_ore"
+  ]
+}
