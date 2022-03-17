@@ -19,89 +19,89 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     public static final Item BOSS_ESSENCE = registerItem("boss_essence",
-            new BOSS_ESSENCE(new FabricItemSettings().rarity(Rarity.EPIC).food(MalechiaFoodComponents.BOSS_ESSENCE).maxCount(1).group(ItemGroup.MISC)));
+            new BOSS_ESSENCE(new FabricItemSettings().rarity(Rarity.EPIC).food(MalechiaFoodComponents.BOSS_ESSENCE).maxCount(1).group(ModItemGroups.MALECHIA_BREWING)));
     public static final Item QUARITE = registerItem("quarite",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item MYCRONIUM_ORB = registerItem("mycronium_orb",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item MYCRONITE_INGOT = registerItem("mycronite_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item AURAUM_CRYSTAL = registerItem("auraum_crystal",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item LOCRONITE_DUST = registerItem("locronite_dust",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item LOCRONITE_INGOT = registerItem("locronite_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item ALOTIC_CRYSTAL = registerItem("alotic_crystal",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item RAW_ERETH = registerItem("raw_ereth",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item ERETH_INGOT = registerItem("ereth_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item CHRYON = registerItem("chryon",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item HALORIUM = registerItem("halorium",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item HALOTIC_INGOT = registerItem("halotic_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item LITRIUM_DUST = registerItem("litrium_dust",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item LITRIUM_INGOT = registerItem("litrium_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item RAW_ALLIA = registerItem("raw_allia",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item ALLIAN_INGOT = registerItem("allian_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item MALECHIA_INGOT = registerItem("malechia_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item BOSS_ESSENCE_IRON_INGOT = registerItem("boss_essence_iron_ingot",
-            new Item(new FabricItemSettings().rarity(Rarity.EPIC).group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_MISC)));
     public static final ToolItem BOSS_ESSENCE_IRON_SWORD = registerToolItem("boss_essence_iron_sword",
-            new SwordItem(MalechiaToolMaterials.BOSS, 3, -2.4F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ItemGroup.COMBAT)));
+            new SwordItem(MalechiaToolMaterials.BOSS, 3, -2.4F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
     public static final ToolItem BOSS_ESSENCE_IRON_SHOVEL = registerToolItem("boss_essence_iron_shovel",
-            new ShovelItem(MalechiaToolMaterials.BOSS, 2.5F, -2.5F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ItemGroup.TOOLS)));
+            new ShovelItem(MalechiaToolMaterials.BOSS, 2.5F, -2.5F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem BOSS_ESSENCE_IRON_PICKAXE = registerToolItem("boss_essence_iron_pickaxe",
-            new PickaxeItem(MalechiaToolMaterials.BOSS, 2, -2.3F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ItemGroup.TOOLS)));
+            new PickaxeItem(MalechiaToolMaterials.BOSS, 2, -2.3F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem BOSS_ESSENCE_IRON_AXE = registerToolItem("boss_essence_iron_axe",
-            new AxeItem(4, -3.0F,MalechiaToolMaterials.BOSS,  new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ItemGroup.TOOLS)));
+            new AxeItem(4, -3.0F,MalechiaToolMaterials.BOSS,  new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem BOSS_ESSENCE_IRON_HOE = registerToolItem("boss_essence_iron_hoe",
-            new HoeItem(MalechiaToolMaterials.BOSS, 1, 0F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ItemGroup.TOOLS)));
+            new HoeItem(MalechiaToolMaterials.BOSS, 1, 0F, new Item.Settings().rarity(Rarity.UNCOMMON).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final Item BOSS_ESSENCE_NETHER_STAR = registerItem("boss_essence_nether_star",
-            new NetherStarItem(new FabricItemSettings().rarity(Rarity.EPIC).group(ItemGroup.MISC)));
+            new NetherStarItem(new FabricItemSettings().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_MISC)));
     public static final Item NETHERITE_SCRAP_NUGGET = registerItem("netherite_scrap_nugget",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item NETHERITE_NUGGET = registerItem("netherite_nugget",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroups.MALECHIA_MISC)));
     public static final Item UNIFIER = registerItem("unifier",
-            new NetherStarItem(new FabricItemSettings().rarity(Rarity.EPIC).group(ItemGroup.MISC)));
+            new NetherStarItem(new FabricItemSettings().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_MISC)));
     public static final Item COMBINER = registerItem("combiner",
-            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON).group(ModItemGroups.MALECHIA_MISC)));
     public static final ToolItem MALECHIA_SWORD = registerToolItem("malechia_sword",
-            new SwordItem(MalechiaToolMaterials.MALECHIA, 3, -2F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.COMBAT)));
+            new SwordItem(MalechiaToolMaterials.MALECHIA, 3, -2F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
     public static final ToolItem MALECHIA_SHOVEL = registerToolItem("malechia_shovel",
-            new ShovelItem(MalechiaToolMaterials.MALECHIA, 2.5F, -2.5F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.TOOLS)));
+            new ShovelItem(MalechiaToolMaterials.MALECHIA, 2.5F, -2.5F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem MALECHIA_PICKAXE = registerToolItem("malechia_pickaxe",
-            new PickaxeItem(MalechiaToolMaterials.MALECHIA, 2, -2.3F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.TOOLS)));
+            new PickaxeItem(MalechiaToolMaterials.MALECHIA, 2, -2.3F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem MALECHIA_AXE = registerToolItem("malechia_axe",
-            new AxeItem(4, -2.7F,MalechiaToolMaterials.MALECHIA,  new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.TOOLS)));
+            new AxeItem(4, -2.7F,MalechiaToolMaterials.MALECHIA,  new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem MALECHIA_HOE = registerToolItem("malechia_hoe",
-            new HoeItem(MalechiaToolMaterials.MALECHIA, 1, 1F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.TOOLS)));
+            new HoeItem(MalechiaToolMaterials.MALECHIA, 1, 1F, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ArmorItem MALECHIA_HELMET = registerArmorItem("malechia_helmet",
-            new MalechiaArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.HEAD, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.COMBAT)));
+            new MalechiaArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.HEAD, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
     public static final ArmorItem MALECHIA_CHESTPLATE = registerArmorItem("malechia_chestplate",
-            new ArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.CHEST, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.COMBAT)));
+            new ArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.CHEST, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
     public static final ArmorItem MALECHIA_LEGGINGS = registerArmorItem("malechia_leggings",
-            new ArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.LEGS, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.COMBAT)));
+            new ArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.LEGS, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
     public static final ArmorItem MALECHIA_BOOTS = registerArmorItem("malechia_boots",
-            new ArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.FEET, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ItemGroup.COMBAT)));
+            new ArmorItem(MalechiaArmorMaterials.MALECHIA, EquipmentSlot.FEET, new Item.Settings().rarity(Rarity.RARE).fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
     public static final MalechiaBowItem MALECHIA_BOW = registerMalechiaBowItem("malechia_bow",
-            new MalechiaBowItem(new FabricItemSettings().group(ItemGroup.COMBAT).rarity(Rarity.RARE).maxDamage(5000)));
+            new MalechiaBowItem(new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT).rarity(Rarity.RARE).maxDamage(5000)));
     public static final Item MALECHIA_SHIELD = registerItem("malechia_shield",
-            new FabricShieldItem(new FabricItemSettings().maxDamage(5000).group(ItemGroup.COMBAT).fireproof(), 5, 20, ModItems.UNIFIER));
+            new FabricShieldItem(new FabricItemSettings().maxDamage(5000).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 5, 20, ModItems.UNIFIER));
     public static final Item NETHERITE_SHIELD = registerItem("netherite_shield",
-            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ItemGroup.COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
+            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
     public static final Item EMPOWERED_STICK = registerItem("empowered_stick",
-            new EmpoweredStickItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).group(ItemGroup.TOOLS)));
+            new EmpoweredStickItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_TOOLS)));
 //    public static final Item NO_CLIP_ITEM = registerItem("no_clip",
 //            new NO_CLIP_ITEM(toolMaterialBoss.INSTANCE, new Item.Settings().rarity(Rarity.EPIC).fireproof().group(ItemGroup.TOOLS)));
 
