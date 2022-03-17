@@ -29,10 +29,10 @@ public class MalechiaMod implements ModInitializer {
 
 		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModWorldGen.generateModWorldGen();
+		ModLootTableModifiers.modifyLootTables();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEnchantments.registerModEnchantments();
 		ModEffects.registerModEffects();
-		ModLootTableModifiers.modifyLootTables();
 	}
 }
