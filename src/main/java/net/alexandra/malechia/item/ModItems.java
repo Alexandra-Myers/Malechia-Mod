@@ -18,6 +18,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
+    public static final Item NETHERITE_SHIELD = registerItem("netherite_shield",
+            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
     public static final Item BOSS_ESSENCE = registerItem("boss_essence",
             new BOSS_ESSENCE(new FabricItemSettings().rarity(Rarity.EPIC).food(MalechiaFoodComponents.BOSS_ESSENCE).maxCount(1).group(ModItemGroups.MALECHIA_BREWING)));
     public static final Item QUARITE = registerItem("quarite",
@@ -98,8 +100,6 @@ public class ModItems {
             new MalechiaBowItem(new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT).rarity(Rarity.RARE).maxDamage(5000)));
     public static final Item MALECHIA_SHIELD = registerItem("malechia_shield",
             new FabricShieldItem(new FabricItemSettings().maxDamage(5000).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 5, 20, ModItems.UNIFIER));
-    public static final Item NETHERITE_SHIELD = registerItem("netherite_shield",
-            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
     public static final Item EMPOWERED_STICK = registerItem("empowered_stick",
             new EmpoweredStickItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_TOOLS)));
 //    public static final Item NO_CLIP_ITEM = registerItem("no_clip",
