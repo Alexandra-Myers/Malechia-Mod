@@ -4,6 +4,7 @@ import net.alexandra.malechia.block.ModBlocks;
 import net.alexandra.malechia.effects.ModEffects;
 import net.alexandra.malechia.enchantments.ModEnchantments;
 import net.alexandra.malechia.item.ModItems;
+import net.alexandra.malechia.util.ModLootTableModifiers;
 import net.alexandra.malechia.worldgeneration.feature.ModConfiguredFeatures;
 import net.alexandra.malechia.worldgeneration.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
@@ -32,5 +33,6 @@ public class MalechiaMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModEnchantments.registerModEnchantments();
 		ModEffects.registerModEffects();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }
