@@ -19,7 +19,7 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     public static final Item NETHERITE_SHIELD = registerItem("netherite_shield",
-            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
+            new FabricShieldItem(new FabricItemSettings().maxDamage(2500).group(ItemGroup.COMBAT).fireproof(), 10, 13, ModItems.NETHERITE_NUGGET));
     public static final Item BOSS_ESSENCE = registerItem("boss_essence",
             new BOSS_ESSENCE(new FabricItemSettings().rarity(Rarity.EPIC).food(MalechiaFoodComponents.BOSS_ESSENCE).maxCount(1).group(ModItemGroups.MALECHIA_BREWING)));
     public static final Item QUARITE = registerItem("quarite",

@@ -13,7 +13,7 @@ import net.minecraft.item.ItemStack;
 
 public class AutoSmelt extends Enchantment {
     public AutoSmelt() {
-        super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+        super(Rarity.UNCOMMON, EnchantmentTarget.DIGGER, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
     @Override
     public int getMaxLevel() {
