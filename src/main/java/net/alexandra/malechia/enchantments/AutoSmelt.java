@@ -9,6 +9,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ItemStack;
 
 public class AutoSmelt extends Enchantment {
     public AutoSmelt() {
@@ -21,6 +22,11 @@ public class AutoSmelt extends Enchantment {
 
     public boolean isTreasure() {
         return true;
+    }
+
+    @Override
+    public boolean isAcceptableItem(ItemStack stack) {
+        return super.isAcceptableItem(stack);
     }
 
     public boolean canAccept(Enchantment other) {

@@ -23,6 +23,12 @@ public class HerosEdge extends Enchantment {
     public boolean isTreasure() {
         return true;
     }
+
+    @Override
+    public boolean isAcceptableItem(ItemStack stack) {
+        return super.isAcceptableItem(stack);
+    }
+
     public float getAttackDamage(int level, EntityGroup group) {
             return 5.5F;
     }
