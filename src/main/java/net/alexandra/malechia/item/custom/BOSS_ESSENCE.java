@@ -75,6 +75,13 @@ public class BOSS_ESSENCE extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         return ItemUsage.consumeHeldItem(world, user, hand);
     }
+
+    @Override
+    public void onCraft(ItemStack stack, World world, PlayerEntity player) {
+        super.onCraft(stack, world, player);
+        stack.decrement(1);
+    }
+
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
