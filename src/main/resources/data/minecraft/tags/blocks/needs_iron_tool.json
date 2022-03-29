@@ -1,17 +1,11 @@
 {
   "replace": false,
   "values": [
-    "minecraft:diamond_block",
-    "minecraft:diamond_ore",
-    "minecraft:deepslate_diamond_ore",
-    "minecraft:emerald_ore",
-    "minecraft:deepslate_emerald_ore",
-    "minecraft:emerald_block",
-    "minecraft:gold_block",
-    "minecraft:raw_gold_block",
-    "minecraft:gold_ore",
-    "minecraft:deepslate_gold_ore",
-    "minecraft:redstone_ore",
-    "minecraft:deepslate_redstone_ore"
+    "malechia:ethereal_log",
+    "malechia:ethereal_wood",
+    "malechia:fiery_ethereal_log",
+    "malechia:fiery_ethereal_wood",
+    "malechia:infinity_ethereal_log",
+    "malechia:infinity_ethereal_wood"
   ]
 }
