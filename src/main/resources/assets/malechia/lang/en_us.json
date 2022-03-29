@@ -76,10 +76,6 @@
   "item.malechia.boss_essence_iron_shovel": "Boss Essence Imbued Iron Shovel",
   "item.malechia.boss_essence_iron_hoe": "Boss Essence Imbued Iron Hoe",
   "block.malechia.boss_essence_iron_block": "Boss Essence Imbued Iron Block",
-  "item.malechia.empowered_stick": "Empowered Stick",
-  "item.malechia.empowered_stick.empty": "%s has no properties",
-  "item.malechia.empowered_stick.update": "\"%s\" to %s",
-  "item.malechia.empowered_stick.select": "selected \"%s\" (%s)",
   "itemGroup.malechia.misc": "Malechia Miscellaneous",
   "itemGroup.malechia.blocks": "Malechia Blocks",
   "itemGroup.malechia.combat": "Malechia Combat",
@@ -87,5 +83,9 @@
   "itemGroup.malechia.brewing": "Malechia Brewing",
   "effect.malechia.boss_power": "Boss Essence's Power",
   "effect.malechia.protected": "Protected",
-  "effect.malechia.weak_armour": "Weakened Armour"
+  "effect.malechia.weak_armour": "Weakened Armour",
+  "item.malechia.empowered_stick": "Empowered Stick",
+  "item.malechia.empowered_stick.empty": "%s has no properties",
+  "item.malechia.empowered_stick.update": "\"%s\" to %s",
+  "item.malechia.empowered_stick.select": "selected \"%s\" (%s)"
 }
