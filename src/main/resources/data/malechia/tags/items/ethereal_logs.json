@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "malechia:ethereal_log",
-    "malechia:ethereal_wood"
+    "malechia:ethereal_wood",
+    "malechia:stripped_ethereal_log",
+    "malechia:stripped_ethereal_wood"
   ]
 }
