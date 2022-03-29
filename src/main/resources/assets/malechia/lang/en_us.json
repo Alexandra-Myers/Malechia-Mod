@@ -1,5 +1,11 @@
 {
   "item.malechia.boss_essence": "Boss Essence",
+  "block.malechia.ethereal_log": "Ethereal Log",
+  "block.malechia.ethereal_wood": "Ethereal Wood",
+  "block.malechia.fiery_ethereal_log": "Fiery Ethereal Log",
+  "block.malechia.fiery_ethereal_wood": "Fiery Ethereal Wood",
+  "block.malechia.infinity_ethereal_log": "Infinity Ethereal Log",
+  "block.malechia.infinity_ethereal_wood": "Infinity Ethereal Wood",
   "block.malechia.quarite_ore": "Quarite Ore",
   "block.malechia.deepslate_quarite_ore": "Deepslate Quarite Ore",
   "item.malechia.quarite": "Pure Quarite",
