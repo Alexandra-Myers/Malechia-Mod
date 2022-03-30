@@ -16,6 +16,8 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_WOOD = registerBlock("ethereal_wood",
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_HYPHAE).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
+    public static final Block ETHEREAL_PLANKS = registerBlock("ethereal_planks",
+            new Block(FabricBlockSettings.copy(Blocks.CRIMSON_PLANKS).strength(6.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block STRIPPED_ETHEREAL_LOG = registerBlock("stripped_ethereal_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block STRIPPED_ETHEREAL_WOOD = registerBlock("stripped_ethereal_wood",
@@ -24,6 +26,8 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block FIERY_ETHEREAL_WOOD = registerBlock("fiery_ethereal_wood",
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_HYPHAE).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
+    public static final Block FIERY_ETHEREAL_PLANKS = registerBlock("fiery_ethereal_planks",
+            new Block(FabricBlockSettings.copy(Blocks.CRIMSON_PLANKS).strength(6.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block STRIPPED_FIERY_ETHEREAL_LOG = registerBlock("stripped_fiery_ethereal_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block STRIPPED_FIERY_ETHEREAL_WOOD = registerBlock("stripped_fiery_ethereal_wood",
@@ -32,6 +36,8 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block INFINITY_ETHEREAL_WOOD = registerBlock("infinity_ethereal_wood",
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_HYPHAE).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
+    public static final Block INFINITY_ETHEREAL_PLANKS = registerBlock("infinity_ethereal_planks",
+            new Block(FabricBlockSettings.copy(Blocks.CRIMSON_PLANKS).strength(6.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block STRIPPED_INFINITY_ETHEREAL_LOG = registerBlock("stripped_infinity_ethereal_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block STRIPPED_INFINITY_ETHEREAL_WOOD = registerBlock("stripped_infinity_ethereal_wood",
