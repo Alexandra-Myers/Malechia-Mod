@@ -9,6 +9,10 @@ import net.alexandra.malechia.util.ModRegistries;
 import net.alexandra.malechia.worldgeneration.feature.ModConfiguredFeatures;
 import net.alexandra.malechia.worldgeneration.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +27,14 @@ public class MalechiaMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		CustomPortalBuilder.beginPortal()
+			.frameBlock(Blocks.NETHERITE_BLOCK)
+			.flatPortal()
+			.onlyLightInOverworld()
+			.lightWithItem(Items.NETHER_STAR)
+			.destDimID(new Identifier("malechia:ethereal_core"))
+			.tintColor(0, 197, 255)
+			.registerPortal();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.

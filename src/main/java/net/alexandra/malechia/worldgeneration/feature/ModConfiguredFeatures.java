@@ -2,8 +2,14 @@ package net.alexandra.malechia.worldgeneration.feature;
 
 import net.alexandra.malechia.MalechiaMod;
 import net.alexandra.malechia.block.ModBlocks;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
@@ -30,6 +36,21 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> LOCRONITE_ORE;
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MYCRONIUM_ORE;
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> QUARITE_ORE;
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> ETHEREAL_TREE =
+            ConfiguredFeatures.register("ethereal_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.ETHEREAL_LOG),
+                    new StraightTrunkPlacer(10, 14, 6),
+                    BlockStateProvider.of(Blocks.WARPED_WART_BLOCK),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
+
+    public static final RegistryEntry<PlacedFeature> ETHEREAL_CHECKED =
+            PlacedFeatures.register("jacaranda_checked", ETHEREAL_TREE);
+
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> ETHEREAL_SPAWN =
+            ConfiguredFeatures.register("jacaranda_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(ETHEREAL_CHECKED, 0.5f)),
+                            ETHEREAL_CHECKED));
     static{
         ALLIAN_ORES = List.of(OreFeatureConfig.createTarget(STONE_ORE_REPLACEABLES, ModBlocks.ALLIAN_ORE.getDefaultState()), OreFeatureConfig.createTarget(DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ALLIAN_ORE.getDefaultState()));
         ALLIAN_ORE = ConfiguredFeatures.register("ore_allian", Feature.ORE, new OreFeatureConfig(ALLIAN_ORES, 4, 0.5F));

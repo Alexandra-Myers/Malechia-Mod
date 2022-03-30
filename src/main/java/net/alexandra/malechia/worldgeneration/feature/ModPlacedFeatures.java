@@ -4,6 +4,7 @@ import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
+import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 
 import static net.alexandra.malechia.worldgeneration.feature.ModOreFeatures.modifiersWithCount;
@@ -11,6 +12,9 @@ import static net.alexandra.malechia.worldgeneration.feature.ModOreFeatures.modi
 public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> ALLIAN_ORE_PLACED;
     public static final RegistryEntry<PlacedFeature> LITRIUM_ORE_PLACED;
+    public static final RegistryEntry<PlacedFeature> ETHEREAL_PLACED = PlacedFeatures.register("ethereal_tree",
+            ModConfiguredFeatures.ETHEREAL_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
     public static final RegistryEntry<PlacedFeature> ALOTIC_ORE_PLACED = PlacedFeatures.register("alotic_ore_placed",
             ModConfiguredFeatures.ALOTIC_ORE, modifiersWithCount(6,
                     HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(32))));

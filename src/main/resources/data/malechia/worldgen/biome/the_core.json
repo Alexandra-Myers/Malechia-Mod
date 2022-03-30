@@ -1,0 +1,25 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "none",
+  "temperature_modifier": "frozen",
+  "category": "the_end",
+  "effects": {
+    "sky_color": 13634,
+    "fog_color": 393303,
+    "water_color": 65484,
+    "water_fog_color": 340776,
+    "grass_color": 6005,
+    "foliage_color": 2908
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave"
+    ]
+  },
+  "features": [
+    "malechia:ethereal_tree"
+  ]
+}
