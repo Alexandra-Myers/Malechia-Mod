@@ -1,9 +1,12 @@
 {
+  "surface_builder": "malechia:ethereal_core",
+  "depth": 0,
+  "scale": 0,
   "temperature": 0.6,
   "downfall": 1,
   "precipitation": "none",
   "temperature_modifier": "frozen",
-  "category": "mountain",
+  "category": "the_end",
   "effects": {
     "sky_color": 13634,
     "fog_color": 393303,
@@ -12,6 +15,9 @@
     "grass_color": 6005,
     "foliage_color": 2908
   },
+  "starts": [
+    "malechia:infinity_temple"
+  ],
   "spawners": {},
   "spawn_costs": {},
   "carvers": {
@@ -26,8 +32,8 @@
     [
       "minecraft:ore_debris_small",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_blackstone"
-    ],
-    "malechia:ethereal_tree_placed"
+      "minecraft:ore_blackstone",
+      "malechia:the_core/ethereal_tree_datapack"
+    ]
   ]
 }

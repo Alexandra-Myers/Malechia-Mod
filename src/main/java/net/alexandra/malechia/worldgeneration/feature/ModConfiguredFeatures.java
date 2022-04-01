@@ -37,7 +37,7 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MYCRONIUM_ORE;
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> QUARITE_ORE;
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> ETHEREAL_TREE =
-            ConfiguredFeatures.register("ethereal_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+            ConfiguredFeatures.register("ethereal_tree_configured", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlocks.ETHEREAL_LOG),
                     new StraightTrunkPlacer(10, 14, 6),
                     BlockStateProvider.of(Blocks.WARPED_WART_BLOCK),
@@ -45,10 +45,10 @@ public class ModConfiguredFeatures {
                     new TwoLayersFeatureSize(1, 0, 2)).build());
 
     public static final RegistryEntry<PlacedFeature> ETHEREAL_CHECKED =
-            PlacedFeatures.register("jacaranda_checked", ETHEREAL_TREE);
+            PlacedFeatures.register("ethereal_checked", ETHEREAL_TREE);
 
     public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> ETHEREAL_SPAWN =
-            ConfiguredFeatures.register("jacaranda_spawn", Feature.RANDOM_SELECTOR,
+            ConfiguredFeatures.register("ethereal_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfig(List.of(new RandomFeatureEntry(ETHEREAL_CHECKED, 0.5f)),
                             ETHEREAL_CHECKED));
     static{
