@@ -12,7 +12,7 @@ import static net.alexandra.malechia.worldgeneration.feature.ModOreFeatures.modi
 public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> ALLIAN_ORE_PLACED;
     public static final RegistryEntry<PlacedFeature> LITRIUM_ORE_PLACED;
-    public static final RegistryEntry<PlacedFeature> ETHEREAL_PLACED = PlacedFeatures.register("ethereal_tree",
+    public static final RegistryEntry<PlacedFeature> ETHEREAL_TREE_PLACED = PlacedFeatures.register("ethereal_tree_placed",
             ModConfiguredFeatures.ETHEREAL_SPAWN, VegetationPlacedFeatures.modifiers(
                     PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
     public static final RegistryEntry<PlacedFeature> ALOTIC_ORE_PLACED = PlacedFeatures.register("alotic_ore_placed",

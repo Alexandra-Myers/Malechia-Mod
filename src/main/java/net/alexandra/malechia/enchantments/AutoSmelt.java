@@ -25,8 +25,18 @@ public class AutoSmelt extends Enchantment {
     }
 
     @Override
+    public boolean isAvailableForRandomSelection() {
+        return false;
+    }
+
+    @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return false;
+    }
+
+    @Override
     public boolean isAcceptableItem(ItemStack stack) {
-        return super.isAcceptableItem(stack);
+        return false;
     }
 
     public boolean canAccept(Enchantment other) {

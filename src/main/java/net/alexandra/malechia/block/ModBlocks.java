@@ -6,18 +6,21 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
+    public static final Block INFINITY_STAINED_GLASS = registerBlock("infinity_stained_glass",
+            new StainedGlassBlock(DyeColor.CYAN,FabricBlockSettings.copy(Blocks.GLASS).strength(3.0f).nonOpaque()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_DIRT = registerBlock("ethereal_dirt",
             new Block(FabricBlockSettings.copy(Blocks.DIRT).strength(3.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_GRASS_BLOCK = registerBlock("ethereal_grass_block",
-            new GrassBlock(FabricBlockSettings.copy(Blocks.GRASS_BLOCK).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
+            new EtherealGrassBlock(FabricBlockSettings.copy(Blocks.GRASS_BLOCK).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_STONE = registerBlock("ethereal_stone",
-            new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE).strength(8.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.DEEPSLATE).strength(8.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_LOG = registerBlock("ethereal_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_WOOD = registerBlock("ethereal_wood",

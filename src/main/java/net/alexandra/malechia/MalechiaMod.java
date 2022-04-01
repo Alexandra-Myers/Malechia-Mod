@@ -6,8 +6,10 @@ import net.alexandra.malechia.enchantments.ModEnchantments;
 import net.alexandra.malechia.item.ModItems;
 import net.alexandra.malechia.util.ModLootTableModifiers;
 import net.alexandra.malechia.util.ModRegistries;
+import net.alexandra.malechia.worldgeneration.biome.MalechiaBiomeKeys;
 import net.alexandra.malechia.worldgeneration.feature.ModConfiguredFeatures;
 import net.alexandra.malechia.worldgeneration.gen.ModWorldGen;
+import net.alexandra.malechia.worldgeneration.gen.surfacebuilder.MalechiaSurfaceRules;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
@@ -40,6 +42,8 @@ public class MalechiaMod implements ModInitializer {
 		// Proceed with mild caution.
 
 
+		MalechiaBiomeKeys.registerBiomeKeys();
+		MalechiaSurfaceRules.registerSurfaceRules();
 		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModWorldGen.generateModWorldGen();
 		ModItems.registerModItems();
