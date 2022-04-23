@@ -94,5 +94,12 @@
   "item.malechia.empowered_stick": "Empowered Stick",
   "item.malechia.empowered_stick.empty": "%s has no properties",
   "item.malechia.empowered_stick.update": "\"%s\" to %s",
-  "item.malechia.empowered_stick.select": "selected \"%s\" (%s)"
+  "item.malechia.empowered_stick.select": "selected \"%s\" (%s)",
+  "item.malechia.spruce_sword": "Spruce Sword",
+  "item.malechia.birch_sword": "Birch Sword",
+  "item.malechia.jungle_sword": "Jungle Sword",
+  "item.malechia.acacia_sword": "Acacia Sword",
+  "item.malechia.dark_oak_sword": "Dark Oak Sword",
+  "item.malechia.crimson_sword": "Crimson Sword",
+  "item.malechia.warped_sword": "Warped Sword"
 }

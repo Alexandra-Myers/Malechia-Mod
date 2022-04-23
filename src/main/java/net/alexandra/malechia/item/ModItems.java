@@ -102,12 +102,32 @@ public class ModItems {
             new FabricShieldItem(new FabricItemSettings().maxDamage(5000).group(ModItemGroups.MALECHIA_COMBAT).fireproof(), 5, 20, ModItems.UNIFIER));
     public static final Item EMPOWERED_STICK = registerItem("empowered_stick",
             new EmpoweredStickItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_TOOLS)));
+    public static final ToolItem SPRUCE_SWORD = registerToolItem("spruce_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+    public static final ToolItem BIRCH_SWORD = registerToolItem("birch_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+    public static final ToolItem JUNGLE_SWORD = registerToolItem("jungle_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+    public static final ToolItem ACACIA_SWORD = registerToolItem("acacia_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+    public static final ToolItem DARK_OAK_SWORD = registerToolItem("dark_oak_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+    public static final ToolItem CRIMSON_SWORD = registerToolItem("crimson_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
+    public static final ToolItem WARPED_SWORD = registerToolItem("warped_sword",
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
 //    public static final Item NO_CLIP_ITEM = registerItem("no_clip",
 //            new NO_CLIP_ITEM(toolMaterialBoss.INSTANCE, new Item.Settings().rarity(Rarity.EPIC).fireproof().group(ItemGroup.TOOLS)));
 
 
+    private static Item registerMinecraftItem(String name, Item item) {
+        return Registry.register(Registry.ITEM, new Identifier("minecraft", name), item);
+    }
     private static Item registerItem(String name, Item item) {
            return Registry.register(Registry.ITEM, new Identifier(MalechiaMod.MOD_ID, name), item);
+    }
+    private static ToolItem registerMinecraftToolItem(String name, Item item) {
+        return (ToolItem) Registry.register(Registry.ITEM, new Identifier(MalechiaMod.MOD_ID, name), item);
     }
     private static ToolItem registerToolItem(String name, Item item) {
         return (ToolItem) Registry.register(Registry.ITEM, new Identifier(MalechiaMod.MOD_ID, name), item);

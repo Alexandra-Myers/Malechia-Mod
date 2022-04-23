@@ -1,12 +1,11 @@
 {
-  "surface_builder": "malechia:ethereal_core",
   "depth": 0,
   "scale": 0,
   "temperature": 0.6,
   "downfall": 1,
   "precipitation": "none",
   "temperature_modifier": "frozen",
-  "category": "the_end",
+  "category": "extreme_hills",
   "effects": {
     "sky_color": 13634,
     "fog_color": 393303,
