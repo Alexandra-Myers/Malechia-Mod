@@ -10,7 +10,7 @@
     "item": "malechia:malechia_pickaxe",
     "data": {
       "display": {
-        "Name": "{\"text\":\"Enhanced Malechia Pickaxe\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_pickaxe\", \"italic\": \"false\"}"
       },
       "CustomModelData": 1,
       "Enchantments": [

@@ -10,6 +10,7 @@ public class MalechiaClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INFINITY_STAINED_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PURE_ETHEREAL_CRYSTAL_BLOCK, RenderLayer.getTranslucent());
         MalechiaModelPredicateProvider.registerModModels();
     }
 }

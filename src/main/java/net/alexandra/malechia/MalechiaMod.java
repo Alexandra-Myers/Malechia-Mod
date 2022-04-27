@@ -28,10 +28,10 @@ public class MalechiaMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		CustomPortalBuilder.beginPortal()
-			.frameBlock(Blocks.NETHERITE_BLOCK)
+			.frameBlock(ModBlocks.PURE_ETHEREAL_CRYSTAL_BLOCK)
 			.flatPortal()
 			.onlyLightInOverworld()
-			.lightWithItem(Items.NETHER_STAR)
+			.lightWithItem(Items.DRAGON_BREATH)
 			.destDimID(new Identifier("malechia:ethereal_core"))
 			.tintColor(0, 197, 255)
 			.registerPortal();

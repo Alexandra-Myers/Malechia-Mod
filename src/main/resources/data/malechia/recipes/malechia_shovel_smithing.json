@@ -10,7 +10,7 @@
     "item": "malechia:malechia_shovel",
     "data": {
       "display": {
-        "Name": "{\"text\":\"Enhanced Malechia Shovel\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_shovel\", \"italic\": \"false\"}"
       },
       "CustomModelData": 1,
       "Enchantments": [

@@ -36,7 +36,7 @@ public class AutoSmelt extends Enchantment {
 
     @Override
     public boolean isAcceptableItem(ItemStack stack) {
-        return false;
+        return super.isAcceptableItem(stack);
     }
 
     public boolean canAccept(Enchantment other) {

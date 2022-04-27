@@ -10,7 +10,7 @@
     "item": "malechia:malechia_axe",
     "data": {
       "display": {
-        "Name": "{\"text\":\"Enhanced Malechia Axe\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_axe\", \"italic\": \"false\"}"
       },
       "CustomModelData": 1,
       "Enchantments": [

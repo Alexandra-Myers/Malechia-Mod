@@ -36,7 +36,7 @@ public class HerosEdge extends Enchantment {
 
     @Override
     public boolean isAcceptableItem(ItemStack stack) {
-        return false;
+        return super.isAcceptableItem(stack);
     }
 
     public float getAttackDamage(int level, EntityGroup group) {

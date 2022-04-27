@@ -10,7 +10,7 @@
     "item": "malechia:malechia_chestplate",
     "data": {
       "display": {
-        "Name": "{\"text\":\"Enhanced Malechia Chestplate\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_chestplate\", \"italic\": \"false\"}"
       },
       "Enchantments": [
         {

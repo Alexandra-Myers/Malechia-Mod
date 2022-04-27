@@ -10,7 +10,7 @@
     "item": "malechia:malechia_helmet",
     "data": {
       "display": {
-        "Name": "{\"text\":\"Enhanced Malechia Helmet\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_helmet\", \"italic\": \"false\"}"
       },
       "Enchantments": [
         {

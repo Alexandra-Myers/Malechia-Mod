@@ -10,7 +10,7 @@
     "item": "malechia:malechia_hoe",
     "data": {
       "display": {
-          "Name": "{\"text\":\"Enhanced Malechia Hoe\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_hoe\", \"italic\": \"false\"}"
       },
       "CustomModelData": 1,
       "Enchantments": [

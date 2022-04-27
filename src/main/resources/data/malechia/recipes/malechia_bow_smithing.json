@@ -10,7 +10,7 @@
     "item": "malechia:malechia_bow",
     "data": {
       "display": {
-        "Name": "{\"text\":\"Enhanced Malechia Bow\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_bow\", \"italic\": \"false\"}"
       },
       "CustomModelData": 1,
       "Enchantments": [

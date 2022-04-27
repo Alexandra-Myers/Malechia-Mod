@@ -103,19 +103,43 @@ public class ModItems {
     public static final Item EMPOWERED_STICK = registerItem("empowered_stick",
             new EmpoweredStickItem(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).group(ModItemGroups.MALECHIA_TOOLS)));
     public static final ToolItem SPRUCE_SWORD = registerToolItem("spruce_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final ToolItem BIRCH_SWORD = registerToolItem("birch_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final ToolItem JUNGLE_SWORD = registerToolItem("jungle_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final ToolItem ACACIA_SWORD = registerToolItem("acacia_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final ToolItem DARK_OAK_SWORD = registerToolItem("dark_oak_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ModItemGroups.MALECHIA_COMBAT)));
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().group(ItemGroup.COMBAT)));
     public static final ToolItem CRIMSON_SWORD = registerToolItem("crimson_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().fireproof().group(ItemGroup.COMBAT)));
     public static final ToolItem WARPED_SWORD = registerToolItem("warped_sword",
-            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().fireproof().group(ModItemGroups.MALECHIA_COMBAT)));
+            new SwordItem(ToolMaterials.WOOD, 3, -2.4F, new FabricItemSettings().fireproof().group(ItemGroup.COMBAT)));
+    public static final ToolItem SPRUCE_SHOVEL = registerToolItem("spruce_shovel",
+            new ShovelItem(ToolMaterials.WOOD, 1.5F, -3.0F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem BIRCH_SHOVEL = registerToolItem("birch_shovel",
+            new ShovelItem(ToolMaterials.WOOD, 1.5F, -3.0F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem JUNGLE_SHOVEL = registerToolItem("jungle_shovel",
+            new ShovelItem(ToolMaterials.WOOD, 1.5F, -3.0F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem SPRUCE_PICKAXE = registerToolItem("spruce_pickaxe",
+            new PickaxeItem(ToolMaterials.WOOD, 1, -2.8F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem BIRCH_PICKAXE = registerToolItem("birch_pickaxe",
+            new PickaxeItem(ToolMaterials.WOOD, 1, -2.8F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem JUNGLE_PICKAXE = registerToolItem("jungle_pickaxe",
+            new PickaxeItem(ToolMaterials.WOOD, 1, -2.8F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem SPRUCE_AXE = registerToolItem("spruce_axe",
+            new AxeItem( 6, 6.0F, ToolMaterials.WOOD, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem BIRCH_AXE = registerToolItem("birch_axe",
+            new AxeItem( 6, 6.0F, ToolMaterials.WOOD, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem JUNGLE_AXE = registerToolItem("jungle_axe",
+            new AxeItem( 6, 6.0F, ToolMaterials.WOOD, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem SPRUCE_HOE = registerToolItem("spruce_hoe",
+            new HoeItem(ToolMaterials.WOOD, 0, -3.0F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem BIRCH_HOE = registerToolItem("birch_hoe",
+            new HoeItem(ToolMaterials.WOOD, 0, -3.0F, (new Item.Settings()).group(ItemGroup.TOOLS)));
+    public static final ToolItem JUNGLE_HOE = registerToolItem("jungle_hoe",
+            new HoeItem(ToolMaterials.WOOD, 0, -3.0F, (new Item.Settings()).group(ItemGroup.TOOLS)));
 //    public static final Item NO_CLIP_ITEM = registerItem("no_clip",
 //            new NO_CLIP_ITEM(toolMaterialBoss.INSTANCE, new Item.Settings().rarity(Rarity.EPIC).fireproof().group(ItemGroup.TOOLS)));
 

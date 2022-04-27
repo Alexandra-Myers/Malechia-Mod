@@ -10,7 +10,7 @@
     "item": "malechia:malechia_boots",
     "data": {
       "display": {
-        "Name": "{\"text\":\"Enhanced Malechia Boots\"}"
+        "Name": "{\"translate\": \"item.malechia.enhanced_malechia_boots\", \"italic\": \"false\"}"
       },
       "Enchantments": [
         {
