@@ -11,6 +11,8 @@ public class MalechiaClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INFINITY_STAINED_GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PURE_ETHEREAL_CRYSTAL_BLOCK, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ETHEREAL_BUSH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ETHEREAL_LEAVES, RenderLayer.getCutout());
         MalechiaModelPredicateProvider.registerModModels();
     }
 }

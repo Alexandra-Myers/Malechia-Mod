@@ -4,7 +4,8 @@
   "package": "net.alexandra.malechia.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "ComposterBlockMixin"
   ],
   "client": [
     "MalechiaMixin"

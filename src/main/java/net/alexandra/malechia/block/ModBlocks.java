@@ -1,6 +1,8 @@
 package net.alexandra.malechia.block;
 
 import net.alexandra.malechia.MalechiaMod;
+import net.alexandra.malechia.block.custom.BushBlock;
+import net.alexandra.malechia.block.custom.EtherealGrassBlock;
 import net.alexandra.malechia.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -18,8 +20,16 @@ public class ModBlocks {
             new StainedGlassBlock(DyeColor.CYAN,FabricBlockSettings.copy(Blocks.GLASS).strength(3.0f).nonOpaque()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block PURE_ETHEREAL_CRYSTAL_BLOCK = registerBlock("pure_ethereal_crystal_block",
             new StainedGlassBlock(DyeColor.WHITE,FabricBlockSettings.copy(Blocks.BEDROCK).strength(-1.0f).nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)), ModItemGroups.MALECHIA_BLOCKS);
+    public static final Block ETHEREAL_DIRT = registerBlock("ethereal_dirt",
+            new Block(FabricBlockSettings.copy(Blocks.DIRT).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
+    public static final Block ETHEREAL_GRASS_BLOCK = registerBlock("ethereal_grass_block",
+            new EtherealGrassBlock(FabricBlockSettings.copy(Blocks.GRASS_BLOCK).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_STONE = registerBlock("ethereal_stone",
             new PillarBlock(FabricBlockSettings.copy(Blocks.DEEPSLATE).strength(8.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
+    public static final Block ETHEREAL_BUSH = registerBlock("ethereal_bush",
+            new BushBlock(FabricBlockSettings.copy(Blocks.AZALEA).nonOpaque()), ModItemGroups.MALECHIA_BLOCKS);
+    public static final Block ETHEREAL_LEAVES = registerBlock("ethereal_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.AZALEA_LEAVES).nonOpaque()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_LOG = registerBlock("ethereal_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.CRIMSON_STEM).strength(4.0f).requiresTool()), ModItemGroups.MALECHIA_BLOCKS);
     public static final Block ETHEREAL_WOOD = registerBlock("ethereal_wood",

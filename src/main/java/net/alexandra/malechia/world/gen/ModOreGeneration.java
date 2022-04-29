@@ -1,6 +1,6 @@
-package net.alexandra.malechia.worldgeneration.gen;
+package net.alexandra.malechia.world.gen;
 
-import net.alexandra.malechia.worldgeneration.feature.ModPlacedFeatures;
+import net.alexandra.malechia.world.feature.ModPlacedFeatures;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.gen.GenerationStep;

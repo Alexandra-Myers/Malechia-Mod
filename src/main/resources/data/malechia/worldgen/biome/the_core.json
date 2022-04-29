@@ -1,38 +1,35 @@
 {
-  "depth": 0,
-  "scale": 0,
-  "temperature": 0.6,
-  "downfall": 1,
-  "precipitation": "none",
-  "temperature_modifier": "frozen",
-  "category": "extreme_hills",
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "precipitation": "snow",
+  "category": "none",
   "effects": {
-    "sky_color": 13634,
-    "fog_color": 393303,
-    "water_color": 65484,
-    "water_fog_color": 340776,
-    "grass_color": 6005,
-    "foliage_color": 2908
+    "sky_color": 0,
+    "fog_color": 10518688,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 65437,
+    "foliage_color": 59064,
+    "ambient_sound": "minecraft:ambient.warped_forest.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.warped_forest.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.warped_forest.additions",
+      "tick_chance": 0.0111
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:warped_spore"
+      },
+      "probability": 0.01428
+    }
   },
-  "starts": [
-    "malechia:infinity_temple"
-  ],
   "spawners": {},
   "spawn_costs": {},
-  "carvers": {
-    "air": [
-      "minecraft:cave"
-    ],
-    "liquid": [
-      "minecraft:cave_extra_underground"
-    ]
-  },
-  "features": [
-    [
-      "minecraft:ore_debris_small",
-      "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_blackstone",
-      "malechia:the_core/ethereal_tree_datapack"
-    ]
-  ]
+  "carvers": {},
+  "features": []
 }

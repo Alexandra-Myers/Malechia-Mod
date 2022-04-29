@@ -6,17 +6,17 @@ import net.alexandra.malechia.enchantments.ModEnchantments;
 import net.alexandra.malechia.item.ModItems;
 import net.alexandra.malechia.util.ModLootTableModifiers;
 import net.alexandra.malechia.util.ModRegistries;
-import net.alexandra.malechia.worldgeneration.feature.ModConfiguredFeatures;
-import net.alexandra.malechia.worldgeneration.gen.ModWorldGen;
+import net.alexandra.malechia.world.biome.MalechiaBuiltinBiomes;
+import net.alexandra.malechia.world.biome.MalechiaSurfaceRules;
+import net.alexandra.malechia.world.feature.ModConfiguredFeatures;
+import net.alexandra.malechia.world.feature.ModTreeConfiguredFeatures;
+import net.alexandra.malechia.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Arrays;
 
 public class MalechiaMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -27,6 +27,7 @@ public class MalechiaMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModTreeConfiguredFeatures.registerConfiguredFeatures();
 		CustomPortalBuilder.beginPortal()
 			.frameBlock(ModBlocks.PURE_ETHEREAL_CRYSTAL_BLOCK)
 			.flatPortal()
@@ -39,7 +40,6 @@ public class MalechiaMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-
 		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModWorldGen.generateModWorldGen();
 		ModItems.registerModItems();
@@ -48,5 +48,7 @@ public class MalechiaMod implements ModInitializer {
 		ModEffects.registerModEffects();
 		ModLootTableModifiers.modifyLootTables();
 		ModRegistries.registerModStuffs();
+		MalechiaBuiltinBiomes.registerModBiomes();
+		MalechiaSurfaceRules.createDefaultRule();
 	}
 }

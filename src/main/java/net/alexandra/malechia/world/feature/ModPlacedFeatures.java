@@ -1,13 +1,12 @@
-package net.alexandra.malechia.worldgeneration.feature;
+package net.alexandra.malechia.world.feature;
 
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
-import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 
-import static net.alexandra.malechia.worldgeneration.feature.ModOreFeatures.modifiersWithCount;
+import static net.alexandra.malechia.world.feature.ModOreFeatures.modifiersWithCount;
 
 public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> ALLIAN_ORE_PLACED;

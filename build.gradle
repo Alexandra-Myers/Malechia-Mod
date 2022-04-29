@@ -2,6 +2,9 @@ plugins {
 	id 'fabric-loom' version '0.11-SNAPSHOT'
 	id 'maven-publish'
 }
+loom {
+	accessWidenerPath = file("src/main/resources/malechia.accesswidener")
+}
 
 
 sourceCompatibility = JavaVersion.VERSION_17
@@ -39,6 +42,7 @@ dependencies {
 	modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
 	modImplementation "net.kyrptonaught:customportalapi:${project.customportalapi_version}"
 	include "net.kyrptonaught:customportalapi:${project.customportalapi_version}"
+	modImplementation 'com.github.glitchfiend:TerraBlender-fabric:1.18.2-1.1.0.99'
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"

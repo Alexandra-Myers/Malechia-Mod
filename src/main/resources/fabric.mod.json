@@ -12,6 +12,7 @@
     "sources": "https://github.com/Alexandra-Myers/Malechia-Mod"
   },
 
+  "accessWidener" : "malechia.accesswidener",
   "license": "MIT",
   "icon": "assets/malechia/icon.png",
 

@@ -1,4 +1,4 @@
-package net.alexandra.malechia.worldgeneration.feature;
+package net.alexandra.malechia.world.feature;
 
 import net.minecraft.world.gen.placementmodifier.*;
 
