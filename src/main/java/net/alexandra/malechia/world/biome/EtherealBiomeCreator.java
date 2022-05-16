@@ -13,11 +13,11 @@ public class EtherealBiomeCreator {
 
         public static Biome createEtherealCore() {
             GenerationSettings.Builder builder = new GenerationSettings.Builder().feature(GenerationStep.Feature.VEGETAL_DECORATION, ModTreePlacedFeatures.ETHEREAL_TREE_PLACED);
-            return EtherealBiomeCreator.createEtherealBiome(builder, Biome.Category.NONE);
+            return EtherealBiomeCreator.createEtherealBiome(builder, Biome.Category.THEEND);
         }
 
         public static Biome createAwakenedEtherealCore() {
             GenerationSettings.Builder builder = new GenerationSettings.Builder().feature(GenerationStep.Feature.VEGETAL_DECORATION, ModTreePlacedFeatures.ETHEREAL_TREE_PLACED);
-            return EtherealBiomeCreator.createEtherealBiome(builder, Biome.Category.NONE);
+            return EtherealBiomeCreator.createEtherealBiome(builder, Biome.Category.THEEND);
         }
 }

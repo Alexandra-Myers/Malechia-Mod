@@ -4,8 +4,10 @@ import net.alexandra.malechia.block.ModBlocks;
 import net.alexandra.malechia.effects.ModEffects;
 import net.alexandra.malechia.enchantments.ModEnchantments;
 import net.alexandra.malechia.item.ModItems;
+import net.alexandra.malechia.tag.MalechiaBlockTags;
 import net.alexandra.malechia.util.ModLootTableModifiers;
 import net.alexandra.malechia.util.ModRegistries;
+import net.alexandra.malechia.world.biome.MalechiaBiomeKeys;
 import net.alexandra.malechia.world.biome.MalechiaBuiltinBiomes;
 import net.alexandra.malechia.world.biome.MalechiaSurfaceRules;
 import net.alexandra.malechia.world.feature.ModConfiguredFeatures;
@@ -44,6 +46,7 @@ public class MalechiaMod implements ModInitializer {
 		ModWorldGen.generateModWorldGen();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		MalechiaBlockTags.registerModBlockTags();
 		ModEnchantments.registerModEnchantments();
 		ModEffects.registerModEffects();
 		ModLootTableModifiers.modifyLootTables();
